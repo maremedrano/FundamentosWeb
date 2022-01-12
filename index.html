@@ -5,48 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <navbar>
-        <ul>
-            <li><a href="index.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </navbar>
 
-    <h1>Mariana Medrano</h1>
 
-    <img src="assets/Foto de perfil.png" alt="Foto de Mariana">
+<!-- Barra de navegação -->
+<navbar class="nav">
+    <ul class="menu">
+        <li><a href="index.html" class='links'>Home</a></li>
+        <li><a href="contato.html" class='botaotopo'>Contato</a></li>
+    </ul>
+</navbar>
 
-    <h2>Sobre</h2>
-    <p>Mariana Medrano possui 25 anos de idade, nasceu em São Paulo capital e, atualmente, reside em São Caetano do Sul, no ABC Paulista, mas cresceu e viveu grande parte de sua vida no interior. Por, junto a sua família, mudar constantemente de cidade, se formou como uma pessoa com bastante facilidade de se adaptar e de criar novos laços.</p>
-    <p>Filha do meio, tem uma irmã mais velha e um irmão mais novo, e considera que isso foi um dos principais fatores que contribuiram no desenvolvimento de um grande sentimento de empatia pelas pessoas, principalmente pelo fato de seu meu irmão ser uma pessoa com deficiencia. Esse também foi um dos motivos que a levou ter escolhido seu primeiro curso: Pedagogia. Mariana cursou Pedagogia na Universidade Federal de São Paulo onde, por um longo período, foi monitora de curso e pesquisadora bolsista. Então, na UNIFESP, além de adquirir  os conhecimentos relativos a educação, pode aprimorar diversas habilidades. Dentre elas, comunicação, trabalho em equipe, pesquisa, persisência e mentalidade de crescimento.</p>
-    <p> Paralelamente a isso, desde antes de formar-se como educadora, possuia interesse pela área da tecnologia por possibilitar a criação e a inventividade. Dessa forma, quando concluiu a graduação, resolveu dar início aos estudos nessa área. O primeiro passo que deu nesse sentido foi a realização de um curso de UI design. Além disso, buscou inúmeros conteúdos gratuitos para entender um pouco sobre UX. Pesquisando um pouco mais, resolveu também estudar questões voltadas à programação. Leu e assistiu alguns materiais e acabou criando bastante interesse.  Assim, encontrou a instituição Generatation Brasil, onde cursou um excelente bootcamp em período integral e formou-se como desenvolvedora web full stack. Nesse bootcamp, aprendeu muito e desenvolveu projetos utilizando Java, Spring Boot e Angular.</p>
-    <p>Com essa base consolidada, atualmente dedica seu tempo aprofundando seus conhecimentos em Front-End.</p>
+<!-- Nome e foto -->
+<div class="margempag">
 
-    <h2>Formação</h2>
+<img src="assets/Foto de perfil.png" alt="Foto de Mariana" class="arredondamentosup">
+
+<div class="apresentacaotexto">
+<legend>Desenvolvedora Full Stack & Pedagoga</legend>
+<h1>Olá, meu nome é <span class="negrito">Mariana Medrano</span></h1>
+</div>
+
+<!-- Sobre -->
+<div class="bloco">
+    <p>Tenho 25 anos de idade, nasci em São Paulo capital e, atualmente, moro em São Caetano do Sul, no ABC Paulista, mas cresci e vivi grande parte de minha vida no interior. Por mudar constantemente de cidade, me formei como uma pessoa com bastante facilidade de se adaptar e de criar novos laços.</p>
+    <p>Filha do meio, tenho uma irmã mais velha e um irmão mais novo, e considero que isso foi um dos principais fatores que contribuiram no desenvolvimento de um grande sentimento de empatia pelas pessoas, principalmente pelo fato de meu irmão ser uma pessoa com deficiencia. Esse também foi um dos motivos que me levou a ter escolhido meu primeiro curso: Pedagogia. Cursei Pedagogia na Universidade Federal de São Paulo onde, por um longo período, fui monitora de curso e pesquisadora bolsista. Então, na UNIFESP, além de adquirir  os conhecimentos relativos a educação, pude aprimorar diversas habilidades. Dentre elas, <span class="negrito">comunicação, trabalho em equipe, pesquisa, persisência e mentalidade de crescimento</span>.</p>
+    <p> Paralelamente a isso, desde antes de formar-me como educadora, mantinha grande interesse pela área da tecnologia por possibilitar a criação e a inventividade. Dessa forma, quando concluí a graduação, resolvi dar início aos estudos nessa área. O primeiro passo que dei nesse sentido, foi a realização de um curso de <span class="negrito">UI design</span>. Além disso, busquei inúmeros conteúdos gratuitos para entender um pouco sobre <span class="negrito">UI</span>. Pesquisando um pouco mais, resolvi também estudar questões voltadas à programação. Li e assisti alguns materiais e acabei criando bastante interesse.  Assim, encontrei a instituição Generatation Brasil, onde cursei um excelente <span class="negrito">bootcamp em período integral</span> que me formou como <span class="negrito">desenvolvedora web full stack</span>. Nesse bootcamp, aprendi muito e desenvolvi projetos utilizando <span class="negrito">Java, Spring Boot e Angular</span>.</p>
+    <p>Com essa base consolidada, atualmente dedico meu tempo aprofundando meus conhecimentos em Front-End.</p>
+</div>
+
+<button><a href="contato.html" class="botao">Contatar</a></button>
+
+<!-- Formação -->
+<div class="formacao">
+<h2>Formação</h2>
     <h3>Generation Brasil</h3>
-    <p>Pessoa Desenvolvedora Web (2021 - 2022)
-        <br>
-        Habilidades técnicas que fazem parte do currículo do curso: fundamentos de programação; estrutura de dados; banco de dados; HTML + CSS + Javascript; programação avançada; metodologia SCRUM.
-    </p>
+        <div class="bloco">
+            <h4>Pessoa Desenvolvedora Web (2021 - 2022)</h4>
+            <p>Habilidades técnicas que fazem parte do currículo do curso: fundamentos de programação; estrutura de dados; banco de dados; HTML + CSS + Javascript; programação avançada; metodologia SCRUM.</p>
+        </div>
 
     <h3>Universidade Federal de São Paulo</h3>
-    <p>Licenciatura em Pedagogia (2016 - 2021)
+        <div class="bloco">
+            <h4>Licenciatura em Pedagogia (2016 - 2021)</h4>
+            <p>O curso de Pedagogia da UNIFESP oferece ampla formação humanística e pedagógica, o que prevê estudos de natureza científica e prática sobre a educação, sempre considerando diferentes contextos. Inclui também as teorias de aprendizagem, do desenvolvimento humano, do currículo, a didática, as metodologias de ensino e a gestão democrática da educação, da escola e do trabalho pedagógico.</p>
+        </div>
+</div>
+
+<!-- Projetos desenvolvidos -->
+<h2>Projetos desenvolvidos</h2>
+
+<div class="projetos">
+    <div class="tag">
+        <img src="assets/Educa.png" alt="Educa" class="arredondamento">
         <br>
-        O curso de Pedagogia da UNIFESP oferece ampla formação humanística e pedagógica, o que prevê estudos de natureza científica e prática sobre a educação, sempre considerando diferentes contextos. Inclui também as teorias de aprendizagem, do desenvolvimento humano, do currículo, a didática, as metodologias de ensino e a gestão democrática da educação, da escola e do trabalho pedagógico.
-    </p>
+        <legend>Educa</legend>
+        <p><a href="https://www.behance.net/gallery/133222347/Educa?share=1" class="linksparagrafos">Educa</a> é o projeto de um app que auxilia gestores escolares no acompanhamento de alunos durante o período de ensino remoto emergencial.</p>
+    </div>
 
-    <h2>Projetos desenvolvidos</h2>
-    <p><img src="assets/Educa.png" alt="Educa"><a href="https://www.behance.net/gallery/133222347/Educa?share=1">Educa</a> é o projeto de um app que auxilia gestores escolares no acompanhamento de alunos durante o período de ensino remoto emergencial.</p>
-    <br>
+    <div class="tag">
+        <img src="assets/WeHug.png" alt="WeHug" class="arredondamento">
+        <br>
+        <legend>WeHug</legend>
+        <p><a href="https://github.com/Projeto-We-Hug" class="linksparagrafos">WeHug</a> é uma rede social com fóruns voltados para discussões acerca de questões sociais, como preconceito e suas ramificações.</p>
+    </div>
 
-    <p><img src="assets/Wehug.png" alt=""><a href="https://github.com/Projeto-We-Hug">WeHug</a> é uma rede social com fóruns voltados para discussões acerca de questões sociais, como preconceito e suas ramificações.</p>
+    <div class="tag">
+        <img src="assets/Pelas ruas que andei.png" alt="Pelas ruas que andei" class="arredondamento">
+        <br>
+        <legend>Pelas ruas que andei</legend>
+        <p>O blog pessoal "<a href="https://github.com/maremedrano/BlogPessoal" class="linksparagrafos">Pelas ruas que andei</a>", de Mariana Medrano, é um espaço para a autora relatar suas experiências em locais que já esteve ou frequentou.</p>
+    </div>
+</div>
 
-    <p><img src="assets/Pelas ruas que andei.png" alt="">O blog pessoal "<a href="https://github.com/maremedrano/BlogPessoal">Pelas ruas que andei</a>", de Mariana Medrano, é um espaço para a autora relatar suas experiências em locais que já esteve ou frequentou.</p>
-
-
-</body>
+</div></body>
 
 
 </html>
