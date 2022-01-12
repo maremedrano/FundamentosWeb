@@ -74,18 +74,26 @@ legend {
 
 /* Apresentação */
 
-.margempag{
+.topofoto{
+    flex-direction: wrap;
+}
+
+.margem{
     margin: 5rem 20rem;
 }
 
-.apresentacaotexto{
+.tituloindex{
     margin: 5rem 0rem 0rem 0rem;
 }
 
+.tmprojetos{
+    height: 15vw;
+    width: 15vw;
+}
 
 /* Blocos */
 
-.bloco{
+.texto{
     display: flex;
     flex-direction: column;
     width: 50vw;
@@ -124,8 +132,11 @@ legend {
 
 }
 
-/* Barra de navegação */
+.botaotopo:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
+/* Barra de navegação */
 
 .menu {
     display: flex;
@@ -153,7 +164,7 @@ legend {
     margin: 5rem 0rem;
 }
 
-.tag {
+.card {
     margin: 0rem 5rem 0rem 0rem;
     display: flex;
     flex-direction: column;
