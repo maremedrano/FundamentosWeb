@@ -1,41 +1,69 @@
+// Por tag: getElementByTagName()
+// Por ID: getElementByTagName()
+// Por nome: getElementsByTagName()
+// Por classe: getElementsByClassName()
+// Por seletor: querySelector()
 
-//Regras do JS
+let nome = window.document.getElementById('nome')
+let email = window.document.getElementById('email')
+let mensagem = window.document.getElementById('mensagem')
 
-//- CaseSentitive (nome / Nome)
-//- Não usa tipagem de dados
-//- Compilado pelo navegador
-
-
-//Decalação das variáveis
-
-//var nome = 'Mariana' -> modelo antigo
-//let nome = "Mariana" -> variáveis que podem ser modificadas
-//const nome = "Mariana" -> variáveis que não sofrem alterações
+let nomeOk = false
+let emailOk = false
+let mensagemOk = false
 
 
-//Uso da DOM
+// Validação Nome
 
-let nome = document.getElementById('nome')
-//document.queryselector()
-
-function validarNome() {
-    if (nome.value.length > 3) {
-        alert('Nome tá legal já')
+function validaNome(){
+    let txtNome = document.querySelector('#txtNome')
+    if(nome.value.length < 3){
+        txtNome.innerHTML = 'Nome inválido.'
+        txtNome.style.color = 'red'
     } else {
-console.log('digite mais')
+        txtNome.innerHTML = 'Nome válido.'
+        txtNome.style.color = 'green'
+        nomeOk = true
     }
 }
 
-if (nome.value.lenght > 3) {
-    texto.innerHTML = 'Tamanho já ta bom'
-    texto.style.color = 'green'
-} else {
-    texto.innerHTML = 'Nome precisa ser maior'
-    texto.style.color = 'red'
+
+// Validação Email
+
+function validaEmail(){
+    let txtEmail = document.querySelector('#txtEmail')
+    if (email.value.indexOf('@') == -1) {
+        txtEmail.innerHTML = 'E-mail inválido'
+        txtEmail.style.color = 'red'
+    } else {
+        txtEmail.innerHTML = 'E-mail válido.'
+        txtEmail.style.color = 'green'
+        emailOk = true
+    }
 }
+
+
+// Validação Nome
+
+function validaMensagem(){
+    let txtMensagem = document.querySelector('#txtMensagem')
+    if(mensagem.value.length >= 100){
+        txtMensagem.innerHTML = 'Texto muito grande. (Máx: 100 caracteres)'
+        txtMensagem.style.color = 'red'
+    } else {
+        txtMensagem.innerHTML = 'Texto válido'
+        txtMensagem.style.color = 'green'
+        mensagemOk = true
+    }
 }
 
 
+// Enviar
 
-dentro da tag nome onkeyup
-<input type"text" id="nome" onkeyup='validarnome()'
+function enviar(){
+    if (nomeOk == true && emailOk == true && mensagemOk == true){
+    alert('Formulário enviado com sucesso!')
+    } else {
+    alert('Preencha o formulário corretamente antes de enviar.')
+    }
+}

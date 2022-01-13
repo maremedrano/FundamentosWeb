@@ -1,41 +1,13 @@
-
-/* ESTILOS DA PÁGINA INDEX.HTML */
-
-/* Tipografias */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Lato&family=Roboto:wght@100;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Lato&family=Montserrat:wght@200&family=Roboto:wght@100;300;400;700&display=swap');
 
 
-/* Body */
-
 body {
     background-color: #FAFAFA;
 }
 
-/* Personalizações */
-.arredondamento{
-    border-radius: 50%;
-}
-
-.arredondamentosup{
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
-
-.negrito{
-    font-weight:800;
-}
-
-.linksparagrafos{
-    text-decoration: none;
-    color: #0C0C0C;
-    font-family: Montserrat;
-    font-weight: 1000;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-}
+/* ESTILOS DA PÁGINA INDEX.HTML */
 
 /* Títulos e textos */
 
@@ -72,18 +44,34 @@ legend {
 }
 
 
-/* Apresentação */
-
-.topofoto{
-    flex-direction: wrap;
+/* Personalização de fontes */
+.negrito{
+    font-weight:800;
 }
 
-.margem{
-    margin: 5rem 20rem;
+.linksparagrafos{
+    text-decoration: none;
+    color: #0C0C0C;
+    font-family: Montserrat;
+    font-weight: 1000;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
 }
 
 .tituloindex{
     margin: 5rem 0rem 0rem 0rem;
+}
+
+
+/* Redimensionamentos e arredondamentos */
+.arredondamento{
+    border-radius: 50%;
+}
+
+.arredondamentosup{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .tmprojetos{
@@ -91,8 +79,44 @@ legend {
     width: 15vw;
 }
 
-/* Blocos */
 
+/* Margens e alinhamentos */
+
+.margem{
+    margin: 5rem 20rem;
+}
+
+.formacao{
+    margin: 5rem 0rem;
+}
+
+.wrap{
+    flex-direction: wrap;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.links {
+    font-size: 1rem;
+    font-family: Lato;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #404040;
+}
+
+.links:hover{
+    font-weight: bold;
+}
+
+
+/* Blocos de texto */
 .texto{
     display: flex;
     flex-direction: column;
@@ -104,8 +128,46 @@ legend {
     line-height: 1.5rem;
 }
 
-.formacao{
+
+/* Projetos desenvolvidos */
+
+.projetos {
+    display: flex;
     margin: 5rem 0rem;
+}
+
+.card {
+    margin: 0rem 5rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.tagtexto {
+    align-items: center;
+}
+
+
+/* Botão */
+
+button{
+    margin: 2rem 0rem;
+    width: 30%;
+    padding: 1rem;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    border: 0;
+    background: #94A58B;
+    color: #FAFAFA;
+    transition: 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 0.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .botao{
@@ -136,48 +198,9 @@ legend {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* Barra de navegação */
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.links {
-    font-size: 1rem;
-    font-family: Lato;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #404040;
-
-}
-
-.links:hover{
-    font-weight: bold;
-}
-
-/* Projetos desenvolvidos */
-
-.projetos {
-    display: flex;
-    margin: 5rem 0rem;
-}
-
-.card {
-    margin: 0rem 5rem 0rem 0rem;
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
-}
-
-.tagtexto {
-    align-items: center;
-}
 
 
 /* ESTILOS DA PÁGINA CONTATO.HTML */
-
 
 .titulo {
     margin: 10rem 0rem 0rem 0rem;
@@ -228,22 +251,5 @@ form {
     border-radius: 0.1rem;
 }
 
-button{
-    margin: 2rem 0rem;
-    width: 30%;
-    padding: 1rem;
-    font-family: Montserrat;
-    font-size: 0.8rem;
-    border: 0;
-    background: #94A58B;
-    color: #FAFAFA;
-    transition: 0.1s;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 0.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-}
 
-button:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+
