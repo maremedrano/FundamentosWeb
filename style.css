@@ -20,6 +20,7 @@ h1 {
 h2 {
     color: #0C0C0C;
     font-family: Roboto;
+    margin: 5rem 0 0;
 }
 
 h3 {
@@ -62,6 +63,10 @@ legend {
     margin: 5rem 0rem 0rem 0rem;
 }
 
+.little{
+    font-size: 0.7rem;
+}
+
 
 /* Redimensionamentos e arredondamentos */
 .arredondamento{
@@ -86,6 +91,11 @@ legend {
     margin: 5rem 20rem;
 }
 
+.nomargem {
+    margin: 0;
+    padding: 0;
+}
+
 .formacao{
     margin: 5rem 0rem;
 }
@@ -93,6 +103,7 @@ legend {
 .wrap{
     flex-direction: wrap;
 }
+
 
 
 /* Menu */
@@ -203,11 +214,11 @@ button:hover{
 /* ESTILOS DA PÁGINA CONTATO.HTML */
 
 .titulo {
-    margin: 10rem 0rem 0rem 0rem;
+    margin: 10rem 0 0;
 }
 
 .redes {
-    margin: 5rem 0rem;
+    margin: 2rem 0 0;
 }
 
 .redesul {
@@ -251,5 +262,11 @@ form {
     border-radius: 0.1rem;
 }
 
-
+footer {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
